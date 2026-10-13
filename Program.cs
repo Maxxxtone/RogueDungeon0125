@@ -24,7 +24,7 @@ namespace RogueDungeon0125
             Console.ResetColor();
             Console.SetCursorPosition(0, 3);
             // вывод строки состояния
-            Console.WriteLine($"♥️[{playerHealth}/{maxHealth}] {gold, 5}$");
+            Console.WriteLine($"♥️[{playerHealth}/{maxHealth}] ${gold, -5}");
 
             // считывание и обработка данных
             int enemyDamage;
@@ -36,7 +36,7 @@ namespace RogueDungeon0125
                 playerHealth = 0;
             }
             Console.SetCursorPosition(0, 3);
-            Console.WriteLine($"♥️[{playerHealth}/{maxHealth}] {gold, 5}$");
+            Console.WriteLine($"♥️[{playerHealth}/{maxHealth}] ${gold, -5}");
             // передвижение игрока
             Console.Write("Двинуться: ");
             var key = Console.ReadKey();
